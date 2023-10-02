@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import ScheduleGrid from "./ScheduleGrid";
 import CreateDaysButton from "./CreateDaysButton";
 import Context from "./Context/Context";
