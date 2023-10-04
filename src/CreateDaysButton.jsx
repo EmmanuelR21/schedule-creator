@@ -2,13 +2,18 @@ import { useContext } from "react";
 import Context from "./Context/Context";
 
 export default function CreateDaysButton() {
-    const { weeks, changeStateOfButtonClicked } = useContext(Context)
+    const { setWeeks, changeStateOfButtonClicked } = useContext(Context)
+
+    function handleSubmit(e) {
+        changeStateOfButtonClicked(true)
+        setWeeks(e.target[0].value)
+    }
 
     return (
-        <label className="flex flex-col items-center">
+        <form onSubmit={handleSubmit} className="flex flex-col items-center">
             How many weeks would you like to create?
-            <input className="border-x border-y border-black rounded" type="number" ref={weeks} />
-            <button className="bg-blue-950 text-white rounded py-1 px-2 mt-4" onClick={() => changeStateOfButtonClicked(true)}>Create Schedule</button>
-        </label>
+            <input className="border-x border-y border-black rounded" type="number" />
+            <button type="submit" className="bg-blue-950 text-white rounded py-1 px-2 mt-4">Create Schedule</button>
+        </form>
     )
 }

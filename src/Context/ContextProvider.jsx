@@ -1,14 +1,18 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Context from "./Context";
+import createSundaysList from "../Functions/createSundaysList";
 
 export default function ContextProvider({ children }) {
     const [buttonClicked, changeStateOfButtonClicked] = useState(false)
-    const weeks = useRef(0);
+    const [weeks, setWeeks] = useState(0)
+    const Sundays = createSundaysList(weeks)
 
     const values = {
         buttonClicked,
         changeStateOfButtonClicked,
-        weeks
+        weeks,
+        setWeeks,
+        Sundays
     }
 
     return (

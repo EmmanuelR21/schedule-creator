@@ -1,10 +1,8 @@
-import createSundaysList from "./Functions/createSundaysList"
 import { useContext } from "react"
 import Context from "./Context/Context"
 
 export default function ScheduleRows() {
-    const { weeks } = useContext(Context)
-    const Sundays = createSundaysList(weeks.current.value)
+    const { Sundays } = useContext(Context)
 
     return (
         Sundays.map(date =>
