@@ -9,7 +9,12 @@ export default function App() {
   return (
     <>
       <h1 className="flex justify-center p-5">Schedule</h1>
-      {buttonClicked ? <ScheduleGrid /> : <CreateDaysButton />}
+      <div>
+        {buttonClicked ? <ScheduleGrid /> : <CreateDaysButton />}
+        <ul>
+          <li draggable onDragStart={e => e.dataTransfer.setData('alter-server', e.target.innerText)}>Emmanuel Ruiz</li>
+        </ul>
+      </div>
     </>
   );
 }
