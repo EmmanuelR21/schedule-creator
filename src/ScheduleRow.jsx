@@ -11,7 +11,7 @@ export default function ScheduleRow({ date }) {
     return (
         <>
             <div className="border-r-0 border-l border-y border-black p-2">{date}</div>
-            <div className="col-span-3 border-x border-y border-black p-2" onDragOver={e => e.preventDefault()} onDrop={handleDrop}>{servers}</div>
+            <div className="flex col-span-3 border-x border-y border-black p-2" onDragOver={e => e.preventDefault()} onDrop={handleDrop}>{servers.map(server => <div>{server},</div>)}</div>
         </>
     )
 }
