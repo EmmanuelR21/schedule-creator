@@ -1,7 +1,6 @@
 import NUM_TO_MONTH from "./Maps/numToMonth"
 
 const createSundaysList = (numOfSundays) => {
-    console.log(numOfSundays)
     const CURRENT_DATE = new Date()
     const SUNDAYS = []
 
