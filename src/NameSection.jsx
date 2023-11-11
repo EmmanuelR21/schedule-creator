@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import pb from "../db/pocketbase"
+import ListOfServers from "./ListOfServers";
 
 export default function NameSection() {
     const [servers, setServers] = useState([])
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const createdUser = {
             "username": e.target[0].value,
@@ -15,7 +16,7 @@ export default function NameSection() {
             "name": e.target[0].value,
             "isServer": true
         }
-        pb.collection("users").create(createdUser)
+        await pb.collection("users").create(createdUser)
         loadServers()
         e.target[0].value = "";
     }
@@ -35,7 +36,7 @@ export default function NameSection() {
 
     useEffect(() => {
         loadServers()
-    })
+    }, [])
 
     return (
         <div>
@@ -46,9 +47,7 @@ export default function NameSection() {
                 </label>
                 <button type="submit">sent</button>
             </form>
-            <ul>
-                {servers.map((obj, i) => <li key={i} draggable onDragStart={e => e.dataTransfer.setData('alter-server', e.target.innerText)}>{obj.name}</li>)}
-            </ul>
+            <ListOfServers list={servers} loadServers={loadServers} />
         </div>
     )
 }
