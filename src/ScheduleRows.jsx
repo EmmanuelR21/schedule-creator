@@ -6,6 +6,6 @@ export default function ScheduleRows() {
     const { Sundays } = useContext(Context)
 
     return (
-        Sundays.map(date => <ScheduleRow date={date}/>)
+        Sundays.map((date, i) => <ScheduleRow key={i} date={date} />)
     )
 }
