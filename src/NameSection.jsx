@@ -34,6 +34,11 @@ export default function NameSection() {
         }
     }
 
+    const handleWhitespace = (e) => {
+        e.preventDefault()
+        if (e.nativeEvent.data.includes(" ")) e.target.value = e.target.value.split(" ").join("")
+    }
+
     useEffect(() => {
         loadServers()
     }, [])
@@ -43,7 +48,7 @@ export default function NameSection() {
             <form onSubmit={handleSubmit}>
                 <label>
                     Add Server:
-                    <input className="border-x border-y border-black rounded" type="text" />
+                    <input className="border-x border-y border-black rounded" type="text" maxLength={20} onChange={handleWhitespace} />
                 </label>
                 <button type="submit">sent</button>
             </form>
