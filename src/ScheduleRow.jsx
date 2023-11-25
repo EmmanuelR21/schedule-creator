@@ -19,9 +19,19 @@ export default function ScheduleRow({ date }) {
         setServers(newArr)
     }
 
+    const changeTypeOfMass = (e) => {
+        console.log(e.target.value)
+    }
+
     return (
         <>
-            <div className="border-r-0 border-l border-y border-black p-2">{date}</div>
+            <div className="border-r-0 border-l border-y border-black p-2">
+                {date}
+                <select className="w-4 bg-white">
+                    <option value="Non-Bilingual">Non-Bilingual</option>
+                    <option value="Bilingual" onClick={changeTypeOfMass}>Bilingual</option>
+                </select>
+            </div>
             <div className="flex col-span-3 border-x border-y border-black p-2" onDragOver={handleDrag} onDrop={handleDrop}>{servers.map((server, index) => <div key={index} accessKey={index} onClick={handleClick}>{server},</div>)}</div>
         </>
     )
