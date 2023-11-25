@@ -25,7 +25,7 @@ The possibilities with this project are endless. As it stands now we share a Goo
 
 Even if this project does not prove to be the productivity machine I intended for Sunday Mass, this venture will be a fun project for me to practice my abilities in ReactJS and explore new technologies and methodologies for creating a project. My hopes however are high for this project, and I pray it works out for the future of this ministry!
 
-[^1] This is the majority of Sundays unless there is a special mass due to a liturgical celebration.
-[^2] I was doing this to make sure that there was no altar server serving more days than others, and others serving fewer days than others. For example, one person was serving 10 Sundays, while another serving 6, knowing these numbers I went back and evened out the numbers.
-[^3] Matthew 16:19 "I will give you the keys of the kingdom of heaven; whatever you bind on earth will be bound in heaven, and whatever you loose on earth will be loosed in heaven.”
-[^4] The interaction is a lot more scary for the younger ones, who often are nervous and don't know how to introduce themselves to others at first.
+[^1]: This is the majority of Sundays unless there is a special mass due to a liturgical celebration.
+[^2]: I was doing this to make sure that there was no altar server serving more days than others, and others serving fewer days than others. For example, one person was serving 10 Sundays, while another serving 6, knowing these numbers I went back and evened out the numbers.
+[^3]: Matthew 16:19 "I will give you the keys of the kingdom of heaven; whatever you bind on earth will be bound in heaven, and whatever you loose on earth will be loosed in heaven.”
+[^4]: The interaction is a lot more scary for the younger ones, who often are nervous and don't know how to introduce themselves to others at first.
