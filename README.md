@@ -8,9 +8,10 @@ Creating schedules is standard at our parish. Every Sunday, there's a list of pe
 ## The Issue
 Assigning 12+ teens every Sunday has become a greater hassle. As my co-leader and I juggle full-time studies, our time to dedicate to schedules is limited. Fairness to our altar servers involves navigating rules: ⚖️
 1. Altar servers shouldn't serve more than 2 Sundays in a row or more than 1 mass a day to prevent burnout.
-2. On Sundays with 2 masses[^2], English and Spanish, rules clash as some kids can't understand Spanish, making serving both masses challenging.
-3. Sunday Cathecism classes prevent some kids from serving the Spanish mass, as it is held at the same time as Spanish mass, complicating rule 1.
-4. Every mass needs at least one appointed "leader" to handle hiccups like missing materials or technical issues.
+2. There must always be at least 3 altar servers per mass.
+3. On Sundays with 2 masses[^2], English and Spanish, rules clash as some kids can't understand Spanish, making serving both masses challenging.
+4. Sunday Cathecism classes prevent some kids from serving the Spanish mass, as it is held at the same time as Spanish mass, complicating rule 1.
+5. Every mass needs at least one appointed "leader" to handle hiccups like missing materials or technical issues.
 
 **TLDR:** Numerous rules clash in creating fair schedules for altar servers, respecting their volunteer time.
 
