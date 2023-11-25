@@ -18,10 +18,10 @@ Assigning 12+ teens every Sunday has become a greater hassle. As my co-leader an
 Crafting schedules on a Google Doc isn't enjoyable. Automation became vital as I tracked altar server rotations[^3], updating numbers on a side comment. Frustration set in. "Why can't I automate this?" I thought to myself. Google Sheets could handle functions and automation, but it was more geared toward numbers and data. The irony struck—a software engineer facing technical hurdles. What if I made my own schedule creator? One doing visually what I wished Google Docs and Excel could, easing my schedule creation.
 
 ## The Goal 🎯
-The primary aim is to offer a specific and tailored UI benefiting the future leaders of the ministry I currently assist. The goal is to simplify schedule creation for them. To achieve this, the tool will harness React and CSS, providing live visual cues for rule violations and helpful hints to expedite the process. As Jesus did with St. Peter, I aim to pass the 🔑's to the Kingdom of altar serving to whoever comes after me, that whatever they bound to the schedule will be bound on Sunday, and whatever they loose on the schedule will be loosed on Sunday 🤣[^4]
+The primary aim is to offer a specific and tailored UI benefiting me, and the future leaders of this ministry. The goal is to simplify schedule creation for them. To achieve this, the tool will harness React and CSS, providing live visual cues for rule violations and helpful hints to expedite the process. As Jesus did with St. Peter, I aim to pass the 🔑's to the Kingdom of altar serving to whoever comes after me, that whatever they bound to the schedule will be bound on Sunday, and whatever they loose on the schedule will be loosed on Sunday 🤣[^4]
 
 ## The Future 🔮
-The possibilities are endless. Instead of sharing a Google Doc link, encouraging altar servers to create accounts will give them instant access to schedules. The website could facilitate communication, allowing requests for replacements without intimidation[^5].🤝🔄
+The possibilities are endless. Instead of sharing a Google Doc link, encouraging altar servers to create accounts will give them instant access to schedules. The website could facilitate communication, allowing requests for replacements without intimidation[^5] for example.🤝🔄
 
 Even if this project doesn't meet Sunday Mass productivity goals, it's a chance for me to enhance my ReactJS skills and explore new technologies. My hopes are high, and I pray it benefits the future of this ministry!
 
