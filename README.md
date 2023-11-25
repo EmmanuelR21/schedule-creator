@@ -5,8 +5,8 @@ I've attended St. John's in Brooklyn, NY, my entire life, becoming a co-leader/o
 
 Creating schedules is standard at our parish. Every Sunday, there's a list of people scheduled for mass, eliminating the need to search for last-minute volunteers, including the altar servers!📆
 
-## The Issue
-Assigning 12+ teens every Sunday has become a greater hassle. As my co-leader and I juggle full-time studies, our time to dedicate to schedules is limited. Fairness to our altar servers involves navigating rules: ⚖️
+## The Issue ⚖️
+Assigning 12+ teens every Sunday has become a greater hassle. As my co-leader and I juggle full-time studies, our time to dedicate to schedules is limited. Fairness to our altar servers involves navigating rules:
 1. Altar servers shouldn't serve more than 2 Sundays in a row or more than 1 mass a day to prevent burnout.
 2. There must always be at least 3 altar servers per mass.
 3. On Sundays with 2 masses[^2], English and Spanish, rules clash as some kids can't understand Spanish, making serving both masses challenging.
