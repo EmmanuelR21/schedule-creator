@@ -7,7 +7,7 @@ At the moment creating schedules is the norm at our parish. Every Sunday there i
 
 ## The Issue
 Lately, the task of assigning 12+ teens every Sunday to serve has become much more of a hassle. With my co-leader/organizer and I becoming full-time students in our respects, there is very little meaningful time for us to work on creating schedules in one day. There is already so much to account for in being fair to the times of our altar servers as is, we have many rules in place:
-1. Alter servers should never serve more than 2 Sundays in a row, or more than 1 mass a day, this gives them a break and avoids burnout.
+1. Altar servers should never serve more than 2 Sundays in a row, or more than 1 mass a day, this gives them a break and avoids burnout.
 2. On Sundays with 2 masses per day[^2], English and Spanish, we need to account for the kids who can't understand Spanish. They need to be able to know what's going on to know when and how to perform their roles. This means certain kids can't serve the Spanish Mass, which makes rule 1 difficult to follow with not many kids able to properly serve one mass or the other.
 3. Sundays are when Cathecism classes are held, so on most Sundays, the kids who have to attend those classes can physically not serve the Spanish mass as they are being taught the faith during Spanish mass in a separate building and brought to church for the English mass. Some of our Spanish-speaking kids are included in this group, which makes rule 1 difficult to follow.
 4. There needs to be at least one appointed "leader" for every mass served to lead the younger ones and deal with unexpected hiccups in the mass. Missing materials, the priest needs a new microphone and cannot leave in the middle of mass, etc.
