@@ -1,4 +1,5 @@
 import { useState } from "react"
+import ServerContainer from "./ServerContainer"
 
 export default function ScheduleRow({ date }) {
     const [servers, setServers] = useState([])
@@ -32,7 +33,15 @@ export default function ScheduleRow({ date }) {
                     <option value="Bilingual" onClick={changeTypeOfMass}>Bilingual</option>
                 </select>
             </div>
-            <div className="flex col-span-3 border-x border-y border-black p-2" onDragOver={handleDrag} onDrop={handleDrop}>{servers.map((server, index) => <div key={index} accessKey={index} onClick={handleClick}>{server},</div>)}</div>
+            <div className="flex col-span-3 border-x border-y border-black p-4" onDragOver={handleDrag} onDrop={handleDrop}>
+                {
+                    servers.map((server, index) => {
+                        return (
+                            <ServerContainer name={server} index={index} clickFunction={handleClick} />
+                        )
+                    })
+                }
+            </div>
         </>
     )
 }
