@@ -1,8 +1,10 @@
+import { useState } from "react"
 import MassContainer from "./MassContainer"
 
 export default function ScheduleRow({ date }) {
+    const [isBilingual, setMassType] = useState(false)
     const changeTypeOfMass = (e) => {
-        console.log(e.target.value)
+        e.target.value == "Non-Bilingual" ? setMassType(false) : setMassType(true)
     }
 
     return (
@@ -10,11 +12,11 @@ export default function ScheduleRow({ date }) {
             <div className="border-r-0 border-l border-y border-black p-2">
                 {date}
                 <select className="w-4 bg-white">
-                    <option value="Non-Bilingual">Non-Bilingual</option>
+                    <option value="Non-Bilingual" onClick={changeTypeOfMass}>Non-Bilingual</option>
                     <option value="Bilingual" onClick={changeTypeOfMass}>Bilingual</option>
                 </select>
             </div>
-            <MassContainer />
+            <MassContainer isBilingual={isBilingual} />
         </>
     )
 }
