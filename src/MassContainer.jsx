@@ -9,7 +9,7 @@ export default function MassContainer({ isBilingual }) {
     return (
         <div className="flex col-span-3 border-x border-y border-black p-2">
             {
-                !isBilingual ?
+                isBilingual ?
                     <ServerInputContainer servers={bilingualServers} setServers={setBilingualServers} />
                     :
                     <>
