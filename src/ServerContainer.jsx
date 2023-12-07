@@ -14,12 +14,12 @@ export default function ServerContainer({ name, index, clickFunction, servers, s
         <div className="border-black border-x border-y"
             draggable
             onDragStart={handleDragStart}
-            onDrag={handleDrag}
+            onDragEnd={handleDrag}
             key={index}
             accessKey={index}
             onClick={clickFunction}
         >
-            {name},
+            {name}
         </div>
     )
 }
