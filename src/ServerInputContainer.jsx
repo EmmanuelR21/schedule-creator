@@ -5,7 +5,8 @@ export default function ServerInputContainer({ servers, setServers }) {
 
     const handleDrop = (e) => {
         const data = e.dataTransfer.getData('alter-server')
-        setServers([...servers, data])
+        const tempSet = new Set([...servers, data])
+        setServers([...tempSet])
     }
 
     const handleClick = (e) => {
