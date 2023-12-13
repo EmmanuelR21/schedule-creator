@@ -1,22 +1,21 @@
-import pb from "../db/pocketbase"
-
-export default function ListOfServers({ list, loadServers }) {
-    const handleDragStart = (e) => {
-        e.dataTransfer.setData('alter-server', e.target.innerText)
-    }
-
-    const handleRemove = async (e) => {
-        e.preventDefault()
-        const { id } = await pb.collection("users").getFirstListItem(`name = "${e.target.innerText}"`, {
-            fields: "id"
-        })
-        await pb.collection("users").delete(id)
-        loadServers()
-    }
+export default function ListOfServers({ list }) {
+    const handleDragStart = (e) => e.dataTransfer.setData('altar-server', e.target.innerText)
 
     return (
         <ul>
-            {list.map((obj, i) => <li onClick={handleRemove} className="w-fit px-2 focus:border-red-600 focus:border" key={i} draggable onDragStart={handleDragStart}>{obj.name}</li>)}
+            <li className="w-fit px-2 border-black border" draggable key={100} onDragStart={handleDragStart}>Simon</li>
+            <li className="w-fit px-2 border-black border" draggable key={101} onDragStart={handleDragStart}>John</li>
+            <li className="w-fit px-2 border-black border" draggable key={102} onDragStart={handleDragStart}>Thomas</li>
+            {list.map((obj, i) =>
+                <li
+                    className="w-fit px-2 border-black border"
+                    draggable
+                    onDragStart={handleDragStart}
+                    key={i}
+                    accessKey={i}
+                >
+                    {obj.name}
+                </li>)}
         </ul>
     )
 }

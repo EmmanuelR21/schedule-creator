@@ -1,13 +1,12 @@
 import ServerContainer from "./ServerContainer"
 
 export default function ServerInputContainer({ servers, setServers }) {
-    const handleDrag = (e) => {
-        e.preventDefault()
-    }
+    const handleDrag = (e) => e.preventDefault()
 
     const handleDrop = (e) => {
-        const data = e.dataTransfer.getData('alter-server')
-        setServers([...servers, data])
+        const data = e.dataTransfer.getData('altar-server')
+        const tempSet = new Set([...servers, data])
+        setServers([...tempSet])
     }
 
     const handleClick = (e) => {
@@ -18,10 +17,17 @@ export default function ServerInputContainer({ servers, setServers }) {
     }
 
     return (
-        <div className="flex border border-black mr-2 px-2 w-auto rounded-md" onDragOver={handleDrag} onDrop={handleDrop}>
+        <ul className="flex border border-black mr-2 px-2 rounded-md" onDragOver={handleDrag} onDrop={handleDrop}>
             {
-                servers.map((server, i) => <ServerContainer name={server} key={i} index={i} clickFunction={handleClick} />)
+                servers.map((server, i) =>
+                    <ServerContainer
+                        name={server}
+                        key={i}
+                        index={i}
+                        clickFunction={handleClick}
+                        servers={servers}
+                        setServers={setServers} />)
             }
-        </div>
+        </ul>
     )
 }

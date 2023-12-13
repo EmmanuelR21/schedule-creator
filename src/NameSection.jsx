@@ -48,9 +48,9 @@ export default function NameSection() {
             <form onSubmit={handleSubmit}>
                 <label>
                     Add Server:
-                    <input className="border-x border-y border-black rounded" type="text" maxLength={20} onChange={handleWhitespace} />
+                    <input className="border border-black rounded-lg ml-1" type="text" maxLength={20} onChange={handleWhitespace} />
                 </label>
-                <button type="submit">sent</button>
+                <button type="submit">&gt;</button>
             </form>
             <ListOfServers list={servers} loadServers={loadServers} />
         </div>
