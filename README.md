@@ -1,4 +1,23 @@
 # Schedule Maker for St. John the Baptist 🇻🇦✝️
+## Setup frontend locally
+First clone the repository to your local machine.
+1. `cd` into the project
+2. Run `npm install` in the root directory of the project.
+3. Run `npm run dev`
+
+The frontend should be running now! Currently features such as the **Add Server** functionality will not work without the databse being setup. Please refer to the next section for setting that up.
+
+Once your backend is setup, create a `.env` file in the root directory of the project. This currently only requires one variable for the connection to the backend.
+
+```
+VITE_DEV_URL = "Insert Pocketbase DB URL here"
+```
+
+This variable is called in the `~/db/pocketbase.js` file
+## Backend
+There is no dev backend, but there does exist _dummy data_ that can be used to test the drag and drop functionality and play around with the UI. The backend is undergoing several changes, I cannot justify releasing it as it is not complete, and thus how the data is called will also change. However if you would like to create your own, it shouldn't take you long to set up! This project is using the Pocketbase DB, please refer to the official site to download and setup the backend yourself, which you can find [here](https://pocketbase.io/docs/).
+
+**PLEASE NOTE:** The backend will be uploaded and made public as soon as it is complete. Any custom pocketbase db is absolutely **NOT** guaranteed to work with the current **OR** future versions of this frontend.
 
 ## Background
 I have been attending St. John's in Brooklyn, NY for my whole life. As I have striven to be an active member in my Parish community, I have become a co-leader/organizer for the group of altar servers that assist the priest during Sunday Mass[^1].
