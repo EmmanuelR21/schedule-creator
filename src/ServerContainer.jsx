@@ -1,10 +1,10 @@
-export default function ServerContainer({ name, index, clickFunction, servers, setServers }) {
+export default function ServerContainer({ name, index, clickFunction }) {
     const handleDragStart = (e) => {
         e.dataTransfer.setData('alter-server', e.target.innerText)
     }
 
     return (
-        <div className="border-black border-x border-y"
+        <li className="w-fit px-2 border-black border"
             draggable
             onDragStart={handleDragStart}
             key={index}
@@ -12,6 +12,6 @@ export default function ServerContainer({ name, index, clickFunction, servers, s
             onClick={clickFunction}
         >
             {name}
-        </div>
+        </li>
     )
 }
