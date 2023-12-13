@@ -7,7 +7,7 @@ export default function MassContainer({ isBilingual }) {
     const [englishServers, setEnglishServers] = useState([])
 
     return (
-        <div className="flex col-span-3 border-x border-y border-black p-2">
+        <div className="flex col-span-3 border border-black p-2">
             {
                 isBilingual ?
                     <ServerInputContainer servers={bilingualServers} setServers={setBilingualServers} />

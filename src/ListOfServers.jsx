@@ -1,9 +1,5 @@
-import pb from "../db/pocketbase"
-
 export default function ListOfServers({ list }) {
-    const handleDragStart = (e) => {
-        e.dataTransfer.setData('alter-server', e.target.innerText)
-    }
+    const handleDragStart = (e) => e.dataTransfer.setData('altar-server', e.target.innerText)
 
     return (
         <ul>
