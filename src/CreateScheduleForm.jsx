@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Context from "./Context/Context";
 
-export default function CreateDaysButton() {
+export default function CreateScheduleForm() {
     const { setWeeks, setStartDate, changeStateOfButtonClicked } = useContext(Context)
 
     const handleSubmit = (e) => {
