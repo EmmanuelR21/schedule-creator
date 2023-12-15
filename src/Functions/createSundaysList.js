@@ -1,7 +1,15 @@
 import NUM_TO_MONTH from "./Maps/numToMonth"
 
-const createSundaysList = (numOfSundays) => {
-    const CURRENT_DATE = new Date()
+const createSundaysList = (numOfSundays, startDate) => {
+    let CURRENT_DATE = new Date()
+    if (startDate) {
+        const START_DATE_ARRAY = startDate.split("-")
+        const [YEAR, MONTH, DATE] = [START_DATE_ARRAY[0], START_DATE_ARRAY[1], START_DATE_ARRAY[2]]
+
+        let CHOSEN_DATE = [MONTH, DATE, YEAR].join('-')
+        CURRENT_DATE = new Date(CHOSEN_DATE)
+    }
+
     const SUNDAYS = []
 
     while (CURRENT_DATE.getDay() !== 0) {

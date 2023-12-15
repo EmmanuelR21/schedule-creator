@@ -5,13 +5,15 @@ import createSundaysList from "../Functions/createSundaysList";
 export default function ContextProvider({ children }) {
     const [buttonClicked, changeStateOfButtonClicked] = useState(false)
     const [weeks, setWeeks] = useState(0)
-    const Sundays = createSundaysList(weeks)
+    const [startDate, setStartDate] = useState(undefined)
+    const Sundays = createSundaysList(weeks, startDate)
 
     const values = {
         buttonClicked,
         changeStateOfButtonClicked,
         weeks,
         setWeeks,
+        setStartDate,
         Sundays
     }
 
