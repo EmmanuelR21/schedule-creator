@@ -17,7 +17,7 @@ export default function ServerInputContainer({ servers, setServers }) {
     }
 
     return (
-        <ul className="flex border border-black mr-2 px-2 rounded-md" onDragOver={handleDrag} onDrop={handleDrop}>
+        <ul className="flex border border-black mr-2 px-2 rounded-md h-6 ml-1" onDragOver={handleDrag} onDrop={handleDrop}>
             {
                 servers.map((server, i) =>
                     <ServerContainer
