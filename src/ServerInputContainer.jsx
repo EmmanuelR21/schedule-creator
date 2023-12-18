@@ -24,9 +24,7 @@ export default function ServerInputContainer({ servers, setServers }) {
                         name={server}
                         key={i}
                         index={i}
-                        clickFunction={handleClick}
-                        servers={servers}
-                        setServers={setServers} />)
+                        clickFunction={handleClick}/>)
             }
         </ul>
     )

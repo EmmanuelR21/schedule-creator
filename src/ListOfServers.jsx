@@ -1,21 +1,26 @@
-export default function ListOfServers({ list }) {
-    const handleDragStart = (e) => e.dataTransfer.setData('altar-server', e.target.innerText)
+import ServerContainer from "./ServerContainer"
+const servers = [
+    "Peter",
+    "Andrew",
+    "Big James",
+    "John",
+    "Lil' James",
+    "Thaddeus",
+    "Nathaniel",
+    "Philip",
+    "Thomas",
+    "Matthew",
+    "Simon Z.",
+    "Matthias"
+]
+
+export default function ListOfServers() {
 
     return (
-        <ul>
-            <li className="w-fit px-2 border-black border" draggable key={100} onDragStart={handleDragStart}>Simon</li>
-            <li className="w-fit px-2 border-black border" draggable key={101} onDragStart={handleDragStart}>John</li>
-            <li className="w-fit px-2 border-black border" draggable key={102} onDragStart={handleDragStart}>Thomas</li>
-            {list.map((obj, i) =>
-                <li
-                    className="w-fit px-2 border-black border"
-                    draggable
-                    onDragStart={handleDragStart}
-                    key={i}
-                    accessKey={i}
-                >
-                    {obj.name}
-                </li>)}
+        <ul className="flex flex-wrap m-auto w-72 justify-between">
+            {
+                servers.map((name, index) => <ServerContainer name={name} index={index} key={index} />)
+            }
         </ul>
     )
 }

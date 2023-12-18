@@ -2,7 +2,7 @@ import { useContext } from "react";
 import ScheduleGrid from "./ScheduleGrid";
 import CreateScheduleForm from "./CreateScheduleForm";
 import Context from "./Context/Context";
-import NameSection from "./NameSection";
+import ListOfServers from "./ListOfServers";
 
 export default function App() {
   const { buttonClicked } = useContext(Context)
@@ -12,7 +12,7 @@ export default function App() {
       <h1 className="flex justify-center p-5">Schedule</h1>
       <div>
         {buttonClicked ? <ScheduleGrid /> : <CreateScheduleForm />}
-        <NameSection />
+        <ListOfServers />
       </div>
     </>
   );
