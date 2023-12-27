@@ -20,9 +20,7 @@ This variable is called in the `~/db/pocketbase.js` file
 
 ## Backend
 
-There is no dev backend, but there does exist _dummy data_ that can be used to test the drag and drop functionality and play around with the UI. The backend is undergoing several changes, I cannot justify releasing it as it is not complete, and thus how the data is called will also change. However if you would like to create your own, it shouldn't take you long to set up! This project is using the Pocketbase DB, please refer to the official site to download and setup the backend yourself, which you can find [here](https://pocketbase.io/docs/).
-
-**PLEASE NOTE:** The backend will be uploaded and made public as soon as it is complete. Any custom pocketbase db is absolutely **NOT** guaranteed to work with the current **OR** future versions of this frontend.
+There is no dev backend, but there does exist _dummy data_ that can be used to test the drag and drop functionality and play around with the UI. This backend was originally using pocketbase, but the backend is now being created using express.js to build the API, and postgres.
 
 ## Background
 
