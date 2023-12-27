@@ -8,15 +8,7 @@ First clone the repository to your local machine.
 2. Run `npm install` in the root directory of the project.
 3. Run `npm run dev`
 
-The frontend should be running now! Currently features such as the **Add Server** functionality will not work without the databse being setup. Please refer to the next section for setting that up.
-
-Once your backend is setup, create a `.env` file in the root directory of the project. This currently only requires one variable for the connection to the backend.
-
-```
-VITE_DEV_URL = "Insert Pocketbase DB URL here"
-```
-
-This variable is called in the `~/db/pocketbase.js` file
+The frontend should be running now!
 
 ## Backend
 
