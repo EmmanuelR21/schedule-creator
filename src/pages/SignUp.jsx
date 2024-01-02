@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import GenericErrorText from "../GenericErrorText";
-import GenericInput from "../GenericInput";
+import GenericErrorText from "../components/GenericErrorText";
+import GenericInput from "../components/GenericInput";
 
 export default function SignUp() {
     const [passwordsMatch, setPasswordsMatch] = useState(true)

@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import ScheduleGrid from "../ScheduleGrid";
-import CreateScheduleForm from "../CreateScheduleForm";
+import ScheduleGrid from "../components/ScheduleGrid";
+import CreateScheduleForm from "../components/CreateScheduleForm";
 import Context from "../Context/Context";
-import ListOfServers from "../ListOfServers";
+import ListOfServers from "../components/ListOfServers";
 
 export default function ScheduleCreator() {
     const { buttonClicked } = useContext(Context)
