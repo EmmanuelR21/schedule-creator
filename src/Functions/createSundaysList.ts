@@ -1,6 +1,6 @@
 import numToMonth from "./Maps/numToMonth"
 
-const createSundaysList = (numOfSundays, startDate) => {
+const createSundaysList = (numOfSundays: number, startDate: string) => {
     let currentDate = new Date()
     if (startDate) {
         const startDateArray = startDate.split("-")
