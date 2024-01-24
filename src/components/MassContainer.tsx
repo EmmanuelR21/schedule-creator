@@ -1,10 +1,10 @@
 import { useState } from "react"
 import ServerInputContainer from "./ServerInputContainer"
 
-export default function MassContainer({ isBilingual }) {
-    const [bilingualServers, setBilingualServers] = useState([])
-    const [spanishServers, setSpanishServers] = useState([])
-    const [englishServers, setEnglishServers] = useState([])
+const MassContainer: React.FC<{ isBilingual: boolean }> = ({ isBilingual }): JSX.Element => {
+    const [bilingualServers, setBilingualServers] = useState<string[]>([])
+    const [spanishServers, setSpanishServers] = useState<string[]>([])
+    const [englishServers, setEnglishServers] = useState<string[]>([])
 
     if (isBilingual) {
         return (
@@ -21,3 +21,5 @@ export default function MassContainer({ isBilingual }) {
         </div >
     )
 }
+
+export default MassContainer;

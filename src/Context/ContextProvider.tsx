@@ -2,11 +2,15 @@ import { useState } from "react";
 import Context from "./Context";
 import createSundaysList from "../Functions/createSundaysList";
 
-export default function ContextProvider({ children }) {
-    const [buttonClicked, changeStateOfButtonClicked] = useState(false)
-    const [weeks, setWeeks] = useState(0)
-    const [startDate, setStartDate] = useState(undefined)
-    const Sundays = createSundaysList(weeks, startDate)
+type ContextProviderProps = {
+    children: React.ReactNode
+}
+
+const ContextProvider = ({ children }: ContextProviderProps): JSX.Element => {
+    const [buttonClicked, changeStateOfButtonClicked] = useState<boolean>(false)
+    const [weeks, setWeeks] = useState<number>(0)
+    const [startDate, setStartDate] = useState<string>("")
+    const Sundays: string[] = createSundaysList(weeks, startDate)
 
     const values = {
         buttonClicked,
@@ -23,3 +27,5 @@ export default function ContextProvider({ children }) {
         </Context.Provider>
     )
 }
+
+export default ContextProvider;

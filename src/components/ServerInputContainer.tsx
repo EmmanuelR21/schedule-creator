@@ -1,17 +1,17 @@
 import ServerContainer from "./ServerContainer"
 
-export default function ServerInputContainer({ servers, setServers }) {
-    const handleDrag = (e) => e.preventDefault()
+const ServerInputContainer: React.FC<{ servers: string[]; setServers: React.Dispatch<React.SetStateAction<string[]>> }> = ({ servers, setServers }): JSX.Element => {
+    const handleDrag = (e: any) => e.preventDefault();
 
-    const handleDrop = (e) => {
+    const handleDrop = (e: any) => {
         const data = e.dataTransfer.getData('altar-server')
-        const tempSet = new Set([...servers, data])
+        const tempSet: Set<any> = new Set([...servers, data])
         setServers([...tempSet])
     }
 
-    const handleClick = (e) => {
+    const handleClick = (e: any) => {
         e.preventDefault()
-        const newArr = [...servers]
+        const newArr: string[] = [...servers]
         newArr.splice(e.target.accessKey, 1)
         setServers(newArr)
     }
@@ -19,13 +19,15 @@ export default function ServerInputContainer({ servers, setServers }) {
     return (
         <ul className="flex border border-black mr-2 px-2 rounded-md h-6 ml-1" onDragOver={handleDrag} onDrop={handleDrop}>
             {
-                servers.map((server, i) =>
+                servers.map((server: string, i: number) =>
                     <ServerContainer
                         name={server}
                         key={i}
                         index={i}
-                        clickFunction={handleClick}/>)
+                        clickFunction={handleClick} />)
             }
         </ul>
     )
 }
+
+export default ServerInputContainer;

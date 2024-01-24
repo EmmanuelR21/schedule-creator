@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import Context from "../Context/Context";
 
-export default function CreateScheduleForm() {
+const CreateScheduleForm: React.FC = (): JSX.Element => {
     const { setWeeks, setStartDate, changeStateOfButtonClicked } = useContext(Context)
 
-    const handleSubmit = (e) => {
-        setStartDate(e.target[0].value)
-        setWeeks(e.target[1].value)
-        changeStateOfButtonClicked(true)
+    const handleSubmit = (e: any): void => {
+        setStartDate?.(e.currentTarget[0].value)
+        setWeeks?.(e.currentTarget[1].value)
+        changeStateOfButtonClicked?.(true)
     }
 
     return (
@@ -18,3 +18,5 @@ export default function CreateScheduleForm() {
         </form>
     )
 }
+
+export default CreateScheduleForm;

@@ -1,31 +1,31 @@
 import numToMonth from "./Maps/numToMonth"
 
-const createSundaysList = (numOfSundays: number, startDate: string) => {
-    let currentDate = new Date()
+const createSundaysList = (numOfSundays: number, startDate: string): string[] => {
+    let currentDate: Date = new Date();
     if (startDate) {
-        const startDateArray = startDate.split("-")
-        const [year, month, date] = [startDateArray[0], startDateArray[1], startDateArray[2]]
+        const startDateArray: string[] = startDate.split("-");
+        const [year, month, date]: [string, string, string] = [startDateArray[0], startDateArray[1], startDateArray[2]];
 
-        let chosenDate = [month, date, year].join('-')
-        currentDate = new Date(chosenDate)
+        const chosenDate: string = [month, date, year].join('-');
+        currentDate = new Date(chosenDate);
     }
 
-    const sundays = []
+    const sundays: string[] = [];
 
     while (currentDate.getDay() !== 0) {
-        currentDate.setDate(currentDate.getDate() + 1)
+        currentDate.setDate(currentDate.getDate() + 1);
     }
 
     for (let i = 0; i < numOfSundays; i++) {
-        sundays.push(`${numToMonth[currentDate.getMonth()]} ${currentDate.getDate()}, ${currentDate.getFullYear()}`)
+        sundays.push(`${numToMonth[currentDate.getMonth()]} ${currentDate.getDate()}, ${currentDate.getFullYear()}`);
 
         if (currentDate.getDate() + 7 < currentDate.getDate()) {
-            currentDate.setMonth(currentDate.getMonth() + 1)
+            currentDate.setMonth(currentDate.getMonth() + 1);
         } else {
-            currentDate.setDate(currentDate.getDate() + 7)
+            currentDate.setDate(currentDate.getDate() + 7);
         }
     }
-    return sundays
+    return sundays;
 }
 
 export default createSundaysList;
