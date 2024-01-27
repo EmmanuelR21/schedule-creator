@@ -1,8 +1,8 @@
 import { useState } from "react"
 import MassContainer from "./MassContainer"
 
-export default function ScheduleRow({ date }) {
-    const [isBilingual, setIsBilingual] = useState(false)
+const ScheduleRow: React.FC<{ date: string }> = ({ date }): JSX.Element => {
+    const [isBilingual, setIsBilingual] = useState<boolean>(false)
 
     return (
         <>
@@ -17,3 +17,5 @@ export default function ScheduleRow({ date }) {
         </>
     )
 }
+
+export default ScheduleRow;

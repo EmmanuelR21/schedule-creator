@@ -1,5 +1,6 @@
 import ServerContainer from "./ServerContainer"
-const servers = [
+
+const servers: string[] = [
     "Peter",
     "Andrew",
     "Big James",
@@ -14,13 +15,14 @@ const servers = [
     "Matthias"
 ]
 
-export default function ListOfServers() {
-
+const ListOfServers: React.FC = (): JSX.Element => {
     return (
         <ul className="flex flex-wrap m-auto w-72 justify-between">
             {
-                servers.map((name, index) => <ServerContainer name={name} index={index} key={index} />)
+                servers.map((name: string, index: number) => <ServerContainer name={name} index={index} key={index} />)
             }
         </ul>
     )
 }
+
+export default ListOfServers;

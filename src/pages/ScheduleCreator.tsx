@@ -4,7 +4,7 @@ import CreateScheduleForm from "../components/CreateScheduleForm";
 import Context from "../Context/Context";
 import ListOfServers from "../components/ListOfServers";
 
-export default function ScheduleCreator() {
+const ScheduleCreator: React.FC = (): JSX.Element => {
     const { buttonClicked } = useContext(Context)
 
     return (
@@ -17,3 +17,5 @@ export default function ScheduleCreator() {
         </>
     )
 }
+
+export default ScheduleCreator;
