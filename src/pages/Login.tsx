@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import GenericErrorText from "../components/GenericErrorText";
+import GenericErrorText from "../components/genericComponents/GenericErrorText";
+import GenericInput from "../components/genericComponents/GenericInput";
 
 const Login: React.FC = (): JSX.Element => {
     const [error, setError] = useState<boolean>(false)
@@ -28,8 +29,8 @@ const Login: React.FC = (): JSX.Element => {
     return (
         <div className="w-full text-xl">
             <form onSubmit={handleLogin} className="flex m-auto w-96 h-96 flex-col justify-center items-center rounded-lg">
-                <input className="border border-black w-64 mb-5 px-2" type="text" placeholder="Username" />
-                <input className="border border-black w-64 mb-5 px-2" type="password" placeholder="Password" />
+                <GenericInput type="text" placeholder="Username" />
+                <GenericInput type="password" placeholder="Password" />
                 {error && <GenericErrorText msg={`${error}`} />}
                 <button type="submit" className="bg-red-500 rounded px-1 mb-10">Login</button>
                 Don't have an account? <Link className="text-blue-700" to={"/signup"}>Sign-up!</Link>

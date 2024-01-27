@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import GenericErrorText from "../components/GenericErrorText";
-import GenericInput from "../components/GenericInput";
+import GenericErrorText from "../components/genericComponents/GenericErrorText";
+import GenericInput from "../components/genericComponents/GenericInput";
 
 const SignUp: React.FC = (): JSX.Element => {
     const [userExists, setUserExists] = useState<boolean>(false)
